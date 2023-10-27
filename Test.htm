@@ -1,6 +1,4 @@
-To center the floating link bar and improve its appearance, you can modify the CSS as follows:
 
-```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,32 +8,30 @@ To center the floating link bar and improve its appearance, you can modify the C
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .floating-bar {
-            position: fixed;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-        }
-
-        .floating-bar a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 10px;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .links-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .links-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
         }
 
         p {
@@ -49,7 +45,7 @@ To center the floating link bar and improve its appearance, you can modify the C
     </style>
 </head>
 <body>
-    <div class="floating-bar">
+    <div class="links-bar">
         <a href="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True">School Cash</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
@@ -58,10 +54,10 @@ To center the floating link bar and improve its appearance, you can modify the C
     <h1>Your Page Title</h1>
 
     <p>
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&mode=WEEK&src=bWFyay5nLmV2YW5zQGdtYWlsLmNvbQ&src=MWRjYTgxMTEwNzcyYzM5NGI0MTQzNDEzNzU6HDY0MDA0MDMxODQ4NzIwODAyNzc6YWx0bXkxMzExMEBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%23cac2cc&color=%238E24AA&color=%23009688" style="border: solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&mode=WEEK&src=bWFyay5n.lmV2YW5zQGdtYWls.lmNvbQ&src=MWRjYTgxMTEwNzcyYzM5NGI0MTQzNDEzNzU2MGE4MzkyZDlhYTViZTY4MzY1OTdhNmJhOGMyZThhY2IwM2RlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZmFtaWx5MDI0NDM2MDUyMjczNzQ1NzE4NDZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS.lmjb20&color=%234285F4&color=%23cac2cc&color=%238E24AA&color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </p>
     <iframe width="800px" height="400px" src="https://docs.google.com/spreadsheets/d/1S_qCXCc-EHHzyMLTDLrBYUOwu1eOLW-Z/edit?usp=sharing&ouid=114954492149015174885&rtpof=true&sd=true/edit?usp=sharing?widget=true&amp;headers=false"></iframe>
     <iframe width="800px" height="900px" src="https://wcdsb.elearningontario.ca/d2l/pp/student-dashboard/9534922"></iframe>
-    <iframe width="800px" height="400px" src="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True"></iframe>
+    
 </body>
 </html>
