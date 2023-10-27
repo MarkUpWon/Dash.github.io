@@ -1,4 +1,4 @@
-To make your HTML-only site look better, you can start by improving the structure and adding some styling. Here's an example of how you can enhance your code:
+To add a sidebar for hyperlinks to your HTML page, you can modify the code as follows:
 
 ```html
 <!DOCTYPE html>
@@ -7,29 +7,46 @@ To make your HTML-only site look better, you can start by improving the structur
   <title>Your Page Title</title>
   <style>
     body {
-      background-color: #f0f0f0; /* Set a background color */
-      font-family: Arial, sans-serif; /* Define a font for the page */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1 {
-      text-align: center; /* Center the heading */
-      color: #333; /* Set text color */
+      text-align: center;
+      color: #333;
     }
     p {
-      text-align: center; /* Center the paragraph */
-      color: #666; /* Set text color */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .iframe-container {
+      margin: 20px;
     }
     iframe {
-      display: block; /* Make iframes block-level */
-      margin: 20px auto; /* Add some spacing around iframes and center them */
+      border: none;
+      width: 800px;
+      height: 600px;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: left;
     }
     a {
-      display: block; /* Make the link a block element */
-      text-align: center; /* Center the link text */
-      margin-top: 20px; /* Add spacing above the link */
-      text-decoration: none; /* Remove underlines from the link */
-      color: #0077cc; /* Set link text color */
+      display: block;
+      text-align: left;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #0077cc;
     }
   </style>
 </head>
@@ -38,9 +55,21 @@ To make your HTML-only site look better, you can start by improving the structur
 <h1>Your Page Title</h1>
 
 <p>
-  <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&mode=WEEK&src=bWFyay5nLmV2YW5zQGdtYWlsLmNvbQ&src=MWRjYTgxMTEwNzcyYzM5NGI0MTQzNDEzNzU2MGE4MzkyZDlhYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY4MzY1OTdhNmJhOGMyZThhY2IwM2RlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23cac2cc&color=%238E24AA&color=%23009688" style="border: none; width: 800px; height: 600px;" frameborder="0" scrolling="no"></iframe>
+  <div class="iframe-container">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&mode=WEEK&src=bWFyay5nLmV2YW5zQGdtYWlsLmNvbQ&src=MWRjYTgxMTEwNzcyYzM5NGI0MTQzNDEzNzU2MGE4MzkyZDlhYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY4MzY1OTdhNmJhOGMyZThhY2IwM2RlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23cac2cc&color=%238E24AA&color=%23009688" style="border: none; width: 800px; height: 600px;" frameborder="0" scrolling="no"></iframe>
+  </div>
 
-  <iframe src="https://docs.google.com/spreadsheets/d/1S_qCXCc-EHHzyMLTDLrBYUOwu1eOLW-Z/edit?usp=sharing&ouid=114954492149015174885&rtpof=true&sd=true/edit?usp=sharing?widget=true&amp;headers=false" style="border: none; width: 800px; height: 400px;"></iframe>
+  <div class="iframe-container">
+    <iframe src="https://docs.google.com/spreadsheets/d/1S_qCXCc-EHHzyMLTDLrBYUOwu1eOLW-Z/edit?usp=sharing&ouid=114954492149015174885&rtpof=true&sd=true/edit?usp=sharing?widget=true&amp;headers=false" style="border: none; width: 800px; height: 400px;"></iframe>
+  </div>
+
+  <div class="sidebar">
+    <h2>Useful Links</h2>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
 </p>
 
 <a href="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True">Visit Our School Cash Online Portal</a>
@@ -49,4 +78,4 @@ To make your HTML-only site look better, you can start by improving the structur
 </html>
 ```
 
-This code adds a basic structure and some styling to your HTML page, making it look more organized and visually appealing. You can further customize the styles to your preference.
+This code adds a sidebar on the right side of your page with hyperlinks. You can customize the links and their destinations as needed.
