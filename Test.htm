@@ -1,4 +1,4 @@
-Sure, I can help improve your HTML code and add a floating bar with useful links. Here's an updated version of your HTML code with a floating bar on the center-right side:
+To center the floating link bar and improve its appearance, you can modify the CSS as follows:
 
 ```html
 <!DOCTYPE html>
@@ -10,16 +10,22 @@ Sure, I can help improve your HTML code and add a floating bar with useful links
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .floating-bar {
             position: fixed;
-            top: 0;
-            right: 50px;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
             background-color: #333;
             color: #fff;
             padding: 10px;
             border-radius: 5px;
+            display: flex;
         }
 
         .floating-bar a {
@@ -44,7 +50,7 @@ Sure, I can help improve your HTML code and add a floating bar with useful links
 </head>
 <body>
     <div class="floating-bar">
-        <a href="#">Link 1</a>
+        <a href="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True">School Cash</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
     </div>
@@ -59,6 +65,3 @@ Sure, I can help improve your HTML code and add a floating bar with useful links
     <iframe width="800px" height="400px" src="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True"></iframe>
 </body>
 </html>
-```
-
-This code includes a floating bar on the right side with placeholder links. You can customize the links and styling as needed.
