@@ -1,3 +1,6 @@
+To make the sidebar always appear at the top left of the page, you can use a combination of CSS for positioning. Here's the modified code:
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +14,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
     }
     h1 {
       text-align: center;
@@ -37,6 +41,9 @@
       color: #fff;
       padding: 10px;
       text-align: left;
+      position: absolute;
+      top: 0; /* Stick to the top */
+      left: 0; /* Stick to the left */
     }
     .sidebar a {
       display: block;
@@ -49,29 +56,17 @@
 </head>
 <body>
 
+<div class="sidebar">
+  <h2>Useful Links</h2>
+  <a href="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True">Visit Our School Cash Online Portal</a>
+</div>
+
 <h1>Your Page Title</h1>
 
 <p>
   <div class="iframe-container">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&mode=WEEK&src=bWFyay5nLmV2YW5zQGdtYWls.lmNvbQ&src=MWRjYTgxMTEwNzcyYzM5NGI0MTQzNDEzNzU2MGE4MzkyZDlhYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY4MzY1OTdhNmJhOGMyZThhY2IwM2RlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23cac2cc&color=%238E24AA&color=%23009688" style="border: none; width: 800px; height: 600px;" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&mode=WEEK&src=bWFyay5nLmV2YW5zQGdtYWls.lmNvbQ&src=MWRjYTgxMTEwNzcyYzM5NGI0MTQzNDEzNzU2MGE4MzkyZDlhYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY8mYTViZTY4MzY1OTdhNmJhOGMyZThhY2Iw2RlOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23cac2cc&color=%238E24AA&color=%23009688" style="border: none; width: 800px; height: 600px;" frameborder="0" scrolling="no"></iframe>
   </div>
 
   <div class="iframe-container">
-    <iframe src="https://docs.google.com/spreadsheets/d/1S_qCXCc-EHHzyMLTDLrBYUOwu1eOLW-Z/edit?usp=sharing&ouid=114954492149015174885&rtpof=true&sd=true/edit?usp=sharing?widget=true&amp;headers=false" style="border: none; width: 800px; height: 400px;"></iframe>
-  </div>
-
-   <div class="iframe-container">
-    <iframe src="https://wcdsb.elearningontario.ca/d2l/pp/student-dashboard/9534922" style="border: none; width: 800px; height: 400px;"></iframe>
-  </div>
-
-  <div class="sidebar">
-    <h2>Useful Links</h2>
-    <a href="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True">Visit Our School Cash Online Portal</a>
-  </div>
-</p>
-
-<a href="https://wcdsb.schoolcashonline.com/Fee/Index/85443/True">Visit Our School Cash Online Portal</a>
-
-</body>
-</html>
-
+    <iframe src="https://docs.google.com/spreadsheets
